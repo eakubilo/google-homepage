@@ -1,0 +1,132 @@
+<style>
+a:link {
+  text-decoration:none;
+  color: black;
+}
+a:visited {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+a:active {
+  text-decoration: underline;
+  color: black;
+}
+#about{
+  position:relative;
+  left: 30px;
+}
+#store{
+  position: relative;
+  left: 30px
+}
+#Gmail{
+  position:absolute;
+  right: 10px;
+}
+#Images{
+  position: absolute;
+  right: 60px;
+}
+#google{
+  position: relative;
+  top: 70px;
+  left: 45%;
+}
+.searchbar{
+  position: relative;
+  top: 80px;
+  left: 45.4%;
+  height: 30px;
+  width: 250px;
+  background-color:white;
+  z-index:0;
+}
+.searchbar::after{
+  background-color: white;
+  content: "";
+  position:absolute;
+  width:12%;
+  height:100%;
+  border-radius: 50%;
+  top: 0%;
+  left: 95%;
+  z-index:0;
+}
+.searchbar::before{
+  background-color: white;
+  content: "";
+  position:absolute;
+  width:12%;
+  height:100%;
+  border-radius: 50%;
+  top: 0%;
+  left: -5%;
+  z-index:0;
+}
+.searchbarborder{
+  position: absolute;
+  top: 202.5px;
+  left: 45.45%;
+  height: 32px;
+  width: 250px;
+  background-color:LightGray;
+  z-index:-1;
+}
+.searchbarborder::after{
+  background-color: LightGray;
+  content: "";
+  position:absolute;
+  width:12%;
+  height:100%;
+  border-radius: 50%;
+  top: 0%;
+  left: 95%;
+  z-index:-1;
+}
+.searchbarborder::before{
+  background-color: LightGray;
+  content: "";
+  position:absolute;
+  width:12%;
+  height:100%;
+  border-radius: 50%;
+  top: 0%;
+  left: -5%;
+  z-index:-1;
+}
+.searchlogo{
+  position: absolute;
+  top: 208.5px;
+  left: 45%;
+  height: 20px;
+  width: 20px;
+  z-index:1;
+}
+.search{
+  position:absolute;
+  top: 208.5px;
+  left: 47%;
+  z-index:3;
+  width: 13%;
+  border: 0;
+}
+</style>
+
+
+
+<div id="topLinks">
+    <a href="https://about.google/?fg=1&utm_source=google-US&utm_medium=referral&utm_campaign=hp-header" id="about">About</a>
+    <a href ="https://store.google.com/US/?utm_source=hp_header&utm_medium=google_ooo&utm_campaign=GS100042&hl=en-US" id = "store">Store</a>
+    <a href ="https://mail.google.com/mail/u/0/?tab=wm&ogbl" id = "Gmail">Gmail</a>
+    <a href ="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl" id = "Images">Images</a>
+  </div>
+  <img src = "https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" id ="google">
+  <img src="https://i.imgur.com/mXJl80N.png" class ="searchlogo">
+  <input type="text" class="search">
+  <div class = "searchbar"></div>
+  <div class = "searchbarborder"</div>
+  
